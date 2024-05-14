@@ -1,0 +1,1 @@
+import o from"jsonwebtoken";export default async(s,t,n)=>{const r=s.cookies.Authorization;if(!r)return t.status(401).json({"error":"Unauthorized: Missing access token."});try{const t=o.verify(r,"Konbanwa");s.user=t,n()}catch(o){t.status(403).json({"error":"Forbidden: Invalid access token."})}};

@@ -1,0 +1,1 @@
+async function t(t){try{const e=await fetch(`https://api.trace.moe/search?anilistInfo&url=${encodeURIComponent(t)}`);return await e.json()}catch(t){return{"error":t.message}}}export default t;

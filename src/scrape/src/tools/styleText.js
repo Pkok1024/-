@@ -1,0 +1,1 @@
+import t from"axios";import e from"cheerio";export default function o(o){return new Promise((r=>{t.get("http://qaz.wtf/u/convert.cgi?text="+o).then((({"data":t})=>{let o=e.load(t),i=[];o("table > tbody > tr").each((function(t,e){i.push({"text":o(e).find("td:nth-child(2)").text().trim()})})),r(i)}))}))}

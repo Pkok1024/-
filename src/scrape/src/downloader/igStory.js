@@ -1,0 +1,1 @@
+import t from"axios";export default async function e(e){try{let o=(await t.get(`https://storiesig.info/api/ig/story?url=${encodeURIComponent(e)}`)).data.result.map((t=>t.image_versions2.candidates.map((t=>t.url)))),r={},a=1;for(let t=0;t<o.length;t++)for(let e=0;e<o[t].length;e++)r[a]=o[t][e],a++;return r}catch(t){console.error(t)}}

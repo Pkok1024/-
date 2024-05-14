@@ -1,0 +1,1 @@
+import e from"axios";export default async(o,t=!1)=>{const a={"messages":[{"content":o,"role":"user"}],"previewToken":null,"codeModelMode":!0,"agentMode":{},"trendingAgentMode":{},"isMicMode":!1,"isChromeExt":!1,"githubToken":null,"webSearchMode":t};return(await e.post("https://www.blackbox.ai/api/chat",a)).data};

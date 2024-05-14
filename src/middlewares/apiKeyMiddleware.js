@@ -1,0 +1,1 @@
+import e from"../models/user.js";export default async(r,s,t)=>{const i=r.query.apikey;if(!i)return s.status(401).json({"error":"API key is required."});const o=await e.findOne({"apiKey":i});return o?"premium"===o.status&&o.limit<=0?s.status(403).json({"error":"Premium user limit exceeded."}):void t():s.status(401).json({"error":"Invalid API key."})};

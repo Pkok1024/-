@@ -1,0 +1,1 @@
+async function t(t){return(await a.get("https://tinyurl.com/api-create.php?url="+encodeURIComponent(t))).data}import a from"axios";export default t;

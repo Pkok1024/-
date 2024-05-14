@@ -1,0 +1,1 @@
+{"version":3,"names":["async","youtube","query","Promise","resolve","reject","yts","then","data","all","error","console","log"],"sources":["0"],"mappings":"AAGAA,eAAeC,EAAQC,GACrB,OAAO,IAAIC,SAAQ,CAACC,EAASC,KAC3B,IAKED,EAJaE,EAAIJ,GAAOK,MAAKC,GACfA,EAAKC,MAIrB,CAAE,MAAOC,GACPL,EAAOK,EACT,CACAC,QAAQC,IAAIF,MAAK,GAErB,QAdOJ,MAAS,2BAgBDL","ignoreList":[]}

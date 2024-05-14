@@ -1,0 +1,1 @@
+async function a(a){try{return(await t.get(`https://api.sightengine.com/1.0/check.json?url=${a}&models=nudity-2.0&api_user=1205877779&api_secret=wVsMFtL6xHPB93fAq3x3HhnVFtWgXNrX`)).data.nudity}catch(a){console.error("Kesalahan dalam pemeriksaan gambar:",a)}}import t from"axios";export default a;

@@ -1,0 +1,1 @@
+async function a(a){const o=await t.get("https://m.persamaankata.com/search.php?q="+a),e=r.load(o.data),s=[];return e("div.word_thesaurus > a").each((function(a,t){s.push(e(t).text())})),{"image":e("img#visual_synonym_img").attr("src"),"result":s}}import t from"axios";import r from"cheerio";export default a;

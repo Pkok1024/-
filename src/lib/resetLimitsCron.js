@@ -1,0 +1,1 @@
+async function e(){o.schedule("0 0 * * *",(async()=>{try{await r.updateMany({},{"$set":{"limit":120}}),console.log("API key limits reset successfully.")}catch(e){console.error("Error resetting API key limits:",e)}}))}import o from"node-cron";import r from"../models/user.js";export default e;

@@ -1,0 +1,1 @@
+import o from"./app.js";import e from"chalk";import("./lib/message.js");const r=process.env.PORT||3e3;o.listen(r,(()=>{console.log(e.cyan(`Server is running on port ${r}`))}));export default o;

@@ -1,0 +1,1 @@
+async function r(r){return new Promise(((o,t)=>{try{o(e(r).then((r=>r.all)))}catch(r){t(r)}console.log(error)}))}import e from"yt-search";export default r;

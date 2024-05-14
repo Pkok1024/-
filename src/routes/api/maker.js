@@ -1,0 +1,1 @@
+import{getBuffer as e}from"../../lib/function.js";import r from"express";import t from"../../middlewares/apiKeyMiddleware.js";import*as i from"../../scrape/index.js";const a=r.Router();a.get("/anime",t,(async(r,t)=>{try{const{"url":a}=r.query,o=await e(a),m=await i.toAnime(o);t.type("image/jpeg").send(m)}catch(e){}}));export default a;
